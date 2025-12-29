@@ -1,208 +1,210 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Thiago Oliveira - Portfólio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Thiago Oliveira - Portfólio de Dados</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <style>
+            /* Container que segura o conteúdo dividido */
+            .content-split {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; /* Alinha verticalmente ao centro */
+                gap: 3rem; /* Espaço entre texto e imagem */
+                margin-top: 2rem;
+                text-align: left; /* Garante que o texto fique alinhado à esquerda */
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+            /* Coluna da Esquerda (Texto) */
+            .split-text {
+                flex: 1; /* Ocupa metade */
+            }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Thiago Oliveira<br />
-						Portfólio</h1>
-						<p>
-							Analista de Dados com foco em resolver problemas reais de negócio através de dados.
-							Atuo com SQL, Python, Power BI e ETL na construção de análises, automações
-							e dashboards que apoiam decisões estratégicas.
-						</p>
+            /* Coluna da Direita (Imagem e Botão) */
+            .split-media {
+                flex: 1; /* Ocupa metade */
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centraliza botão e imagem na coluna deles */
+            }
 
-						<p>
-							<a href="https://www.linkedin.com/in/thiago-oliveira-2549aa224/" target="_blank">
-								LinkedIn | Vamos nos conectar
-							</a>
-						</p>
+            /* Ajuste da imagem para caber na coluna */
+            .split-media img {
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                margin-bottom: 1.5rem;
+                transition: transform 0.3s ease;
+            }
+            
+            .split-media img:hover {
+                transform: scale(1.02);
+            }
 
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+            /* Estilo da lista de detalhes técnica */
+            .tech-list {
+                list-style: none; /* Remove as bolinhas padrão */
+                padding: 0;
+                margin-top: 1.5rem;
+            }
+            
+            .tech-list li {
+                margin-bottom: 0.8rem;
+                padding-left: 0;
+                border-bottom: 1px solid rgba(210, 215, 217, 0.25); /* Linha sutil separando itens */
+                padding-bottom: 0.5rem;
+            }
+            
+            .tech-list li:last-child {
+                border-bottom: none;
+            }
 
-				<!-- Header -->
+            /* MODO CELULAR: Empilha tudo verticalmente */
+            @media screen and (max-width: 980px) {
+                .content-split {
+                    flex-direction: column;
+                }
+                .split-text {
+                    text-align: center; /* No celular fica centralizado */
+                }
+                .tech-list {
+                    text-align: left; /* Mantém a lista alinhada a esquerda mesmo no mobile */
+                    display: inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-					<header id="header">
-						<a class="logo">Projetos</a>
-					</header>
+        <div id="wrapper" class="fade-in">
 
-				 
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Bem-Vindo</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/thiago-oliveira-2549aa224/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/xzThiago" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-				
-				<!-- Main -->
-					<div id="main">
+            <div id="intro">
+                <h1>Thiago Oliveira<br />Portfólio</h1>
+                <p>
+                    Analista de Dados focado em resolver problemas de negócio.<br /> 
+                    Amplo conhecimento em <b>SQL, Python, Power BI e ETL</b> para resolver problemas e apoio a decisões estratégicas.
+                </p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Ver Projetos</a></li>
+                </ul>
+            </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Projeto em Destaque</span>
+            <header id="header">
+                <a href="index.html" class="logo">Thiago Oliveira | Data Analyst</a>
+            </header>
 
-									<h2>
-										<a>
-										Sales Overview Dashboard — Análise de Performance Comercial
-										</a>
-									</h2>
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Projetos</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/thiago-oliveira-2549aa224/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/xzThiago" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
 
-									<div class="post-description">
-										<p>
-										Projeto desenvolvido em Power BI com foco na análise
-										da performance comercial por região e estado.
-										</p>
-										<p>
-										O painel permite a análise dinâmica de Vendas, Lucro e Quantidade, com filtros
-										por ano e comparação automática com o ano anterior (PY), possibilitando a
-										avaliação de crescimento, queda e tendências de negócio.
-										</p>
-										<p>
-										Foram criadas visualizações interativas por região (Central, East, South e West),
-										análises mensais com média para identificação de padrões, mapa de bolhas por
-										estado e tabela comparativa com métricas de Ano Atual (CY), Ano Anterior (PY)
-										e variação Year over Year (YoY).
-										</p>
-										<p>
-										O projeto apoia a tomada de decisão estratégica, facilitando a identificação
-										de regiões e estados com melhor e pior desempenho comercial.
-										</p>
-									</div>
-								</header>
+            <div id="main">
 
-								<a href="#" class="image main">
-									<img src="images/projeto_sales_overview.png" alt="Dashboard de vendas" />
-								</a>
+                <article class="post featured">
+                    
+                    <header class="major">
+                        <span class="date">Projeto em Destaque</span>
+                        <h2><a href="#">Sales Overview Dashboard</a></h2>
+                    </header>
 
-								<ul class="actions special">
-									<li><a href="#" class="button large">Ver Projeto</a></li>
-								</ul>
-							</article>
+                    <div class="content-split">
+                        
+                        <div class="split-text">
+                            <p>
+                                Desenvolvi este dashboard para transformar dados brutos de vendas em decisões estratégicas. 
+                                Ele permite monitorar a saúde financeira da empresa através de indicadores como 
+                                <strong>Vendas, Lucro e Quantidade</strong>, comparando o desempenho atual com o ano anterior (YoY).
+                            </p>
+                            
+                            <ul class="tech-list">
+                                <li>
+                                    <strong>🛠 Ferramentas:</strong> Microsoft Power BI & Power Query.
+                                </li>
+                                <li>
+                                    <strong>📊 Análises:</strong> Variação anual (YoY) e performance por região.
+                                </li>
+                                <li>
+                                    <strong>✨ Funcionalidades:</strong> Tooltips customizados e Mapas interativos.
+                                </li>
+                                <li>
+                                    <strong>🚀 Resultado:</strong> Identificação rápida de gargalos operacionais.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="split-media">
+                            <a href="#" class="image">
+                                <img src="images/projeto_sales_overview.png" alt="Dashboard Power BI" />
+                            </a>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/xzThiago" class="button large primary">Ver Projeto Completo</a></li>
+                            </ul>
+                        </div>
 
+                    </div>
+                </article>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Em breve</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p><!-- Descrição do projeto aqui --></p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Em breve</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p><!-- Descrição do projeto aqui --></p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-							
-							</section>
+                <section class="posts">
+                    <article>
+                        <header>
+                            <h2><a href="#">Em breve</a></h2>
+                        </header>
+                        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                        <p></p>
+                        <ul class="actions special">
+                            <li><a href="#" class="button">Ver Projeto</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <header>
+                            <h2><a href="#">Em breve</a></h2>
+                        </header>
+                        <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                        <p></p>
+                        <ul class="actions special">
+                            <li><a href="#" class="button">Ver Projeto</a></li>
+                        </ul>
+                    </article>
+                </section>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-					
-								</div>
-							</footer>
+            </div>
 
-					</div>
+            <footer id="footer">
+                <section>
+                    <h3>Vamos nos conectar?</h3>
+                    <p>Estou disponível para novos desafios e projetos na área de dados.</p>
+                </section>
+                <section class="split contact">
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://www.linkedin.com/in/thiago-oliveira-2549aa224/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/xzThiago" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!--
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							-->
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/thiago-oliveira-2549aa224/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/xzThiago" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            <div id="copyright">
+                <ul><li>&copy; Thiago Oliveira</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+            </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        </div>
 
-			</div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>
