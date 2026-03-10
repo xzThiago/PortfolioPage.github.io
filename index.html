@@ -1,83 +1,103 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Thiago Oliveira - Portfólio de Dados</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Thiago Oliveira - Portfólio de Dados</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
 
-    <style>
+  <style>
+
+    /* Limita largura do conteúdo e centraliza */
+    .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Título principal menos agressivo */
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* Layout lado a lado */
+    .content-split {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .split-text {
+      flex: 1;
+    }
+
+    .split-media {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Imagens */
+    .split-media img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      margin-bottom: 1.2rem;
+      transition: transform 0.25s ease;
+    }
+
+    .split-media img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Lista de tecnologias */
+    .tech-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1.2rem;
+    }
+
+    .tech-list li {
+      margin-bottom: 0.7rem;
+      border-bottom: 1px solid rgba(210, 215, 217, 0.25);
+      padding-bottom: 0.4rem;
+    }
+
+    .tech-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Responsividade */
+    @media screen and (max-width: 980px) {
+
       .content-split {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 3rem;
-        margin-top: 2rem;
-        text-align: left;
+        flex-direction: column;
+        gap: 1.5rem;
       }
 
       .split-text {
-        flex: 1;
-      }
-
-      .split-media {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .split-media img {
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        margin-bottom: 1.5rem;
-        transition: transform 0.3s ease;
-      }
-
-      .split-media img:hover {
-        transform: scale(1.02);
+        text-align: center;
       }
 
       .tech-list {
-        list-style: none;
-        padding: 0;
-        margin-top: 1.5rem;
+        text-align: left;
+        display: inline-block;
       }
 
-      .tech-list li {
-        margin-bottom: 0.8rem;
-        border-bottom: 1px solid rgba(210, 215, 217, 0.25);
-        padding-bottom: 0.5rem;
-      }
+    }
 
-      .tech-list li:last-child {
-        border-bottom: none;
-      }
-
-      @media screen and (max-width: 980px) {
-
-        .content-split {
-          flex-direction: column;
-        }
-
-        .split-text {
-          text-align: center;
-        }
-
-        .tech-list {
-          text-align: left;
-          display: inline-block;
-        }
-
-      }
-    </style>
-  </head>
+  </style>
+</head>
 
   <body class="is-preload">
 
@@ -346,6 +366,7 @@
 
   </body>
 </html>
+
 
 
 
